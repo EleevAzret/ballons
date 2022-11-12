@@ -1,6 +1,5 @@
 .row {
 	max-width: $max-width;
-	background: rgb(161, 74, 74);
 	margin: 0 auto;
 
 	&:not(:last-child) {
@@ -14,7 +13,6 @@
 	&:not(:last-child) {
 		margin-right: $gutter-horizontal;
 	}
-	background-color: aquamarine;
 	float: left;
 }
 

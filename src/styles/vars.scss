@@ -10,6 +10,10 @@ $margin-bottom-big: 8rem;
 $max-width: 114rem;
 $gutter-horizontal: 6rem;
 
+$fs-par: 1.6rem;
+$fs-h2: 3.6rem;
+$fs-h3: 2rem;
+
 @mixin clearfix {
 	&::after {
 		content: "";
