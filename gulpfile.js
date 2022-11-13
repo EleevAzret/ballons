@@ -21,6 +21,11 @@ function styles() {
 					.pipe(gulp.dest('./dist/styles'));
 }
 
+function defaultStyles() {
+	return gulp.src('./src/styles/default/**/*')
+					.pipe(gulp.dest('./dist/styles/default'));
+}
+
 
 function js() {
 	return gulp.src('./src/scripts/**/*.js')
@@ -36,9 +41,10 @@ function watch() {
 	gulp.watch('./src/**/*.html', html);
 	gulp.watch('./src/scripts/**/*.js', js);
 	gulp.watch('./src/styles/**/*.scss', styles);
+	gulp.watch('./src/styles/default/**/*', defaultStyles);
 	gulp.watch('./src/img/**/*', img);
 }
 
-let build = gulp.series(clean, gulp.parallel(html, styles, js, img), watch);
+let build = gulp.series(clean, gulp.parallel(html, styles, js, img, defaultStyles), watch);
 
 gulp.task('build', build);

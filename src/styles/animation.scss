@@ -1,0 +1,33 @@
+@keyframes leftToRight {
+	0% {
+		opacity: 0%;
+		transform: translateX(-30%);
+	}
+
+	80% {
+		transform: translateX(10%);
+		opacity: 80%;
+	}
+
+	100% {
+		opacity: 100%;
+		transform: translateX(0);
+	}
+}
+
+
+@keyframes toUp {
+	0% {
+		opacity: 0;
+		transform: translateY(30rem);
+	}
+
+	80% {
+		opacity: 100%;
+		transform: translateY(-50%);
+	}
+
+	100% {
+		transform: translateY(0);
+	}
+}
