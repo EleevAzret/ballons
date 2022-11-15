@@ -6,6 +6,7 @@
 	background: linear-gradient(90deg, $brown-light 3.65%, $brown-dark 100%);
 	-webkit-background-clip: text;
 	color: transparent;
+	text-shadow: 0 .4rem .4rem rgba(#000000, .25);
 
 	backface-visibility: hidden;
 	transition: all .4s;
@@ -13,6 +14,11 @@
 	&:hover {
 		transform: skew(15deg, 5deg) scale(1.05);
 		text-shadow: 0 .4rem .4rem rgba(#000000, .25);
+	}
+
+	
+	&_white {
+		color: $white;
 	}
 }
 

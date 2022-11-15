@@ -11,6 +11,24 @@
 </head>
 <body>
 	<div class="wrapper">
+
+		<div class="navigation">
+			<input type="checkbox" name="toggle" id="toggle" class="navigation__toggle">
+			<label for="toggle" class="navigation__button">
+				<span class="navigation__icon"></span>
+			</label>
+			<div class="navigation__background"></div>
+			<nav class="navigation__menu">
+				<ul class="navigation__list">
+					<li class="navigation__item"><a href="#" class="navigation__link">О НАС</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link">СКИДКИ</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link">ЛУЧШИЕ ТУРЫ</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link">КАЛЬКУЛЯТОР ЦЕНЫ</a></li>
+					<li class="navigation__item"><a href="#" class="navigation__link">СВЯЗАТЬСЯ С НАМИ</a></li>
+				</ul>
+			</nav>
+		</div>
+
 		<header class="header">
 			<img src="img/icons/Icon-logo.svg" alt="logo" class="header__icon">
 			<div class="header__menu"></div>
@@ -95,6 +113,9 @@
 				</div>
 			</section>
 			<section class="tour">
+				<div class="text-align-center mb80">
+					<h2 class="title-secondary">НАИБОЛЕЕ ПОПУЛЯРНЫЕ ТУРЫ</h2>
+				</div>
 				<div class="row">
 					<div class="col-1-of-3">
 						<div class="tour-card">
@@ -117,7 +138,7 @@
 							</div>
 							<div class="tour-card__side tour-card__side_back">
 								<h4 class="tour-card__back-title mb80">ПОЛНАЯ СТОИМОСТЬ:</h4>
-								<span class="tour-card__price mb80">7990₽</span>
+								<span class="tour-card__price mb80">5990₽</span>
 								<a href="#" class="btn">ЗАБРОНИРОВАТЬ</a>
 							</div>
 						</div>
@@ -143,7 +164,7 @@
 							</div>
 							<div class="tour-card__side tour-card__side_back">
 								<h4 class="tour-card__back-title mb80">ПОЛНАЯ СТОИМОСТЬ:</h4>
-								<span class="tour-card__price mb80">5990₽</span>
+								<span class="tour-card__price mb80">6990₽</span>
 								<a href="#" class="btn">ЗАБРОНИРОВАТЬ</a>
 							</div>
 						</div>
@@ -177,7 +198,104 @@
 				</div>
 				<a href="#" class="btn">ЗАБРОНИРОВАТЬ</a>
 			</section>
+			<section class="feedBack">
+				<div class="bg-video-gradient"></div>
+				<video class="bg-video" autoplay muted loop>
+					<source src="img/balloons.mp4">
+					<source src="img/balloons.webm">
+				</video>
+				<div class="text-align-center mb80">
+					<h2 class="title-secondary title-secondary_white">ОТЗЫВЫ НАШИХ КЛИЕНТОВ</h2>
+				</div>
+				<div class="row">
+					<div class="card-feedBack">
+						<fugure class="card-feedBack__img">
+							<img src="img/spanser.jpg" alt="man">
+							<figcaption class="card-feedBack__name">
+								Спенсер Айдахо
+							</figcaption>
+						</fugure>
+						<div class="card-feedBack__text-block">
+							<h3 class="title-third mb10">
+								Я ПОЛУЧИЛ МАССУ ВПЕЧАТЛЕНИЙ
+							</h3>
+							<p class="paragraph">
+									Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет за собой процесс внедрения и модернизации соответствующий условий активизации. Таким образом начало повседневной работы по формированию позиции влечет.
+							</p>
+						</div>
+					</div>			
+				</div>
+				<div class="row">
+					<div class="card-feedBack">
+						<fugure class="card-feedBack__img">
+							<img src="img/kate.jpg" alt="man">
+							<figcaption class="card-feedBack__name">
+								Кейт Марлоу
+							</figcaption>
+						</fugure>
+						<div class="card-feedBack__text-block">
+							<h3 class="title-third mb10">
+								ЭТО БЫЛО ВЕЛИКОЛЕПНО И НЕЗАБЫВАЕМО
+							</h3>
+							<p class="paragraph">
+								Задача организации, в особенности же дальнейшее развитие различных форм деятельности влечет засобой процесс внедрения и модернизации соответствующий условий активизации. Таким образом начало повседневной работы по формированию позиции влечет.
+							</p>
+						</div>
+					</div>
+				</div>
+				<div class="text-align-center">
+					<a href="#" class="btn">ЗАБРОНИРОВАТЬ</a>
+				</div>
+			</section>
+			<section class="book">
+				<div class="row">
+					<div class="book-block">
+						<div class="book__form">
+							<form action="#" class="form">
+								<h2 class="title-secondary mb30">ЗАБРОНИРОВАТЬ ТУР</h2>
+								<div class="form__group">
+									<input type="text" class="form__input" placeholder="Имя Фамилия" id="name" required>
+									<label for="name" class="form__label">Имя Фамилия</label>
+								</div>
+								<div class="form__group">
+									<input type="email" class="form__input" placeholder="Почтовый адрес" id="email" required>
+									<label for="email" class="form__label">Почтовый адрес</label>
+								</div>
+								<div class="form__group">
+									<div class="form__radio-group">
+										<input type="radio" name="tour" id="group-tour" class="form__radio">
+										<label for="group-tour" class="form__label-radio">
+											<span class="form__radio-button"></span>
+											Групповой тур</label>
+									</div>
+									<div class="form__radio-group">
+										<input type="radio" name="tour" id="individual-tour" class="form__radio">
+										<label for="individual-tour" class="form__label-radio">
+											<span class="form__radio-button"></span>
+											Индивидуальный тур</label>
+									</div>
+								</div>
+								<div class="form__group">
+									<button class="btn btn_brown">ЗАБРОНИРОВАТЬ</button>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
+		<footer class="footer">
+			<div class="text-align-center mb50">
+				<a href="#" class="footer__img"><img src="img/icons/Icon-logo.svg" alt="big logo"></a>
+			</div>
+			<ul class="footer__nav">
+				<li class="footer__item"><a href="#" class="footer__link">О НАС</a></li>
+				<li class="footer__item"><a href="#" class="footer__link">СКИДКИ</a></li>
+				<li class="footer__item"><a href="#" class="footer__link">ЛУЧШИЕ ТУРЫ</a></li>
+				<li class="footer__item"><a href="#" class="footer__link">КАЛЬКУЛЯТОР ЦЕНЫ</a></li>
+				<li class="footer__item"><a href="#" class="footer__link">СВЯЗАТЬСЯ С НАМИ</a></li>
+			</ul>
+		</footer>
 	</div>
 </body>
 </html>

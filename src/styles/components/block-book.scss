@@ -1,0 +1,115 @@
+.book-block {
+	height: 50rem;
+	background: linear-gradient(105deg, rgba($white, .9) 0%, rgba($white, .9) 55%, rgba($brown-light, .3) 55%, rgba($brown-dark, .3) 100%), url(../img/book-img.jpg) center/cover no-repeat;
+	box-shadow: 0 .4rem .4rem rgba($black, .25);
+	border-radius: .5rem;
+	overflow: hidden;
+}
+
+.form {
+	padding: 5rem;
+	width: 70%;
+
+	&__group {
+		&:not(:last-child) {
+			margin-bottom: 2.5rem;
+		}
+
+		&:nth-child(4) {
+			margin-bottom: 3.5rem;
+		}
+	}
+
+	&__input {
+		padding: 2rem 0 2rem 2.5rem;
+		width: 55%;
+		border: none;
+		border-bottom: 3px solid transparent;
+		border-radius: .5rem;
+
+		font-size: $fs-par;
+		letter-spacing: 0.2rem;
+		font-weight: 400;
+
+		transition: all .3s ease-out;
+
+		&:focus {
+			outline: none;
+			border-color: #66D763;
+			box-shadow: 0 .4rem .4rem rgba($black, .25);
+		}
+		&:focus:invalid {
+			border-color: #D76363;
+		}
+	}
+
+	&__label {
+		font-size: $fs-par;
+		letter-spacing: .2rem;
+		font-weight: 400;
+		display: block;
+		margin-top: 1rem;
+		margin-left: 2.5rem;
+
+		transition: all .3s ease-out;
+	}
+
+	&__input:placeholder-shown + &__label {
+		opacity: 0;
+		visibility: hidden;
+		transform: translateY(-2rem);
+	}
+
+	&__radio-group {
+		display: inline-block;
+		&:not(:last-child) {
+			margin-right: 2.5rem;
+		}
+	}
+
+	&__label-radio {
+		cursor: pointer;
+		position: relative;
+		padding-left: 4rem;
+
+		font-size: $fs-par;
+		font-weight: 400;
+		letter-spacing: 0.2rem;
+	}
+
+	&__radio-button {
+		width: 3rem;
+		height: 3rem;
+		display: block;
+		position: absolute;
+		left: 0;
+		top: -.45rem;
+		border-radius: 50%;
+		border: .5rem solid $brown-dark;
+
+		&::after {
+			content: "";
+			opacity: 0;
+			display: block;
+			width: 1.5rem;
+			height: 1.5rem;
+			border-radius: 50%;
+			background-color: $brown-dark;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			transform: translate(-50%, -50%);
+
+			transition: all .15s ease-out;
+		}
+	}
+
+	&__radio {
+		display: none;
+	}
+
+	&__radio:checked ~ &__label-radio &__radio-button::after {
+		opacity: 1;
+	}
+}
+

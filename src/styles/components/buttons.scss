@@ -1,7 +1,7 @@
 .btn {
-	&:link, &:visited {
+	&, &:link, &:visited {
 		background-color: #fff;
-		padding: 1.5rem 4rem;
+		padding: 1.5rem 3rem;
 		border-radius: 5rem;
 		display: inline-block;
 		position: relative;
@@ -50,6 +50,18 @@
 	&_animated {
 		animation: toUp 1.3s ease-in-out .5s backwards;
 		backface-visibility: hidden;
+	}
+
+	&_brown {
+		background-color: $brown-dark;
+		color: $white;
+		border: none;
+		cursor: pointer;
+
+		&::after {
+			display: none;
+		}	
+		
 	}
 }
 

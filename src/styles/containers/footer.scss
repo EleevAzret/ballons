@@ -1,0 +1,40 @@
+.footer {
+	background-color: #333333;
+	padding: 8rem 0;
+
+	&__img > img {
+		width: 12rem;
+	}
+
+	&__nav {
+		list-style: none;
+		text-align: center;
+	}
+
+	&__item {
+		display: inline-block;
+
+		&:not(:last-child) {
+			margin-right: 5rem;
+		}
+	}
+
+	&__link {
+		&:link, &:visited {
+			text-decoration: none;
+			color: $white;
+			font-size: $fs-par;
+			font-weight: 200;
+			letter-spacing: 0.2rem;
+			display: inline-block;
+
+			transition: transform .2s;
+		}
+		&:hover {
+			transform: scale(1.1) skewY(-5deg);
+			color: $brown-dark;
+			font-weight: 400;
+			text-shadow: 0 .4rem .4rem rgba($black, .25);
+		}
+	}
+}
