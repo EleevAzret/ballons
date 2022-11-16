@@ -30,7 +30,7 @@
 	perspective: 150rem;
 	-moz-perspective: 150rem;
 	
-	@include media(s) {
+	@media only screen and (max-width: 900px), (hover:none) {
 		height: auto;
 	}
 
@@ -48,7 +48,7 @@
 		
 		box-shadow: 0 .4rem .4rem rgba($black, .25);
 
-		@include media(s) {
+		@media only screen and (max-width: 900px), (hover:none) {
 			height: auto;
 			position: relative;
 		}
@@ -67,7 +67,7 @@
 			padding-top: 10rem;
 			text-align: center;
 
-			@include media(s) {
+			@media only screen and (max-width: 900px), (hover:none) {
 				transform:  rotateY(0);
 				padding: 2rem;
 				margin-top: -10rem;
@@ -101,7 +101,7 @@
 		background-color: $brown-light;
 		background-blend-mode: hard-light;
 
-		@include media(s) {
+		@media only screen and (max-width: 900px), (hover:none) {
 			height: 40rem;
 			margin-bottom: 2rem;
 		}
@@ -124,7 +124,7 @@
 		top: 32%;
 		right: 0;
 
-		@include media(s) {
+		@media only screen and (max-width: 900px), (hover:none) {
 			font-size: 5rem;
 			line-height: 6.4rem;
 			top: 40%;
@@ -139,7 +139,7 @@
 	&__descr {
 		font-weight: 700;
 		
-		@include media(s) {
+		@media only screen and (max-width: 900px), (hover:none) {
 			font-size: 2rem;
 		}
 
@@ -162,7 +162,7 @@
 		letter-spacing: .2rem;
 		color: $white;
 
-		@include media(s) {
+		@media only screen and (max-width: 900px), (hover:none) {
 			font-size: 3rem;
 			margin-bottom: 2rem;
 		}
@@ -180,7 +180,7 @@
 			margin-bottom: 10rem;
 		}
 
-		@include media(s) {
+		@media only screen and (max-width: 900px), (hover:none) {
 			font-size: 7rem;
 			margin-bottom: 3rem;
 		}

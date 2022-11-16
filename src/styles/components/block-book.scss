@@ -6,8 +6,12 @@
 	overflow: hidden;
 
 	@include media(s) {
-		background: linear-gradient(105deg, rgba($white, .8) 0%, rgba($white, .8) 100%), url(../img/book-img.jpg) right/cover no-repeat;
+		background: linear-gradient(105deg, rgba($white, .8) 0%, rgba($white, .8) 100%), url(../img/book-img-xs.jpg) right/cover no-repeat;
 		height: 60rem;
+	}
+
+	@media (min-width: 1800px) {
+		background: linear-gradient(105deg, rgba($white, .9) 0%, rgba($white, .9) 55%, rgba($brown-light, .3) 55%, rgba($brown-dark, .3) 100%), url(../img/book-img-xl.jpg) center/cover no-repeat;
 	}
 }
 
