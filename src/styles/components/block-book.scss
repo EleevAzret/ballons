@@ -4,25 +4,55 @@
 	box-shadow: 0 .4rem .4rem rgba($black, .25);
 	border-radius: .5rem;
 	overflow: hidden;
+
+	@include media(s) {
+		background: linear-gradient(105deg, rgba($white, .8) 0%, rgba($white, .8) 100%), url(../img/book-img.jpg) right/cover no-repeat;
+		height: 60rem;
+	}
 }
 
 .form {
 	padding: 5rem;
 	width: 70%;
 
+	@include media(m) {
+		padding: 2rem 5rem;
+	}
+
+	@include media(s) {
+		width: 100%;
+		text-align: left;
+	}
+
 	&__group {
 		&:not(:last-child) {
 			margin-bottom: 2.5rem;
+
+			@include media(m) {
+				margin-bottom: 1rem;
+			}
+
+			@include media(s) {
+				margin-bottom: 2rem;
+			}
 		}
 
 		&:nth-child(4) {
 			margin-bottom: 3.5rem;
+
+			@include media(m) {
+				margin-bottom: 3rem;
+			}
+
+			@include media(s) {
+				margin-bottom: 5rem;
+			}
 		}
 	}
 
 	&__input {
 		padding: 2rem 0 2rem 2.5rem;
-		width: 55%;
+		width: 70%;
 		border: none;
 		border-bottom: 3px solid transparent;
 		border-radius: .5rem;
@@ -32,6 +62,11 @@
 		font-weight: 400;
 
 		transition: all .3s ease-out;
+
+		@include media(s) {
+			width: 90%;
+			box-shadow: 0 .4rem .4rem rgba($black, .25);
+		}
 
 		&:focus {
 			outline: none;
@@ -64,6 +99,15 @@
 		display: inline-block;
 		&:not(:last-child) {
 			margin-right: 2.5rem;
+		}
+
+		@include media(m) {
+			display: block;
+
+			&:not(:last-child) {
+				margin-right: 0;
+				margin-bottom: 2rem;
+			}
 		}
 	}
 

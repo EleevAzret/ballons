@@ -10,6 +10,18 @@
 		position: absolute;
 		top: 5rem;
 		left: 5rem;
+
+		@include media(m) {
+			top: 3rem;
+			left: 3rem;
+		}
+
+		@include media(xs) {
+			width: 8rem;
+			height: 8rem;
+			top: 5rem;
+			left: 5rem;
+		}
 	}
 
 	&__block {
@@ -20,12 +32,20 @@
 
 		width: 100%;
 		text-align: center;
+
+		@include media(m) {
+			top: 60%;
+		}
 	}
 }
 
 .title-first {
 	color: $white;
 	margin-bottom: 5rem;
+
+	@include media(m) {
+		margin-bottom: 4rem;
+	}
 
 	&__main {
 		display: block;
@@ -39,6 +59,19 @@
 
 		animation: leftToRight 1s ease-in-out .5s backwards;
 		backface-visibility: hidden;
+
+		@include media(m) {
+			font-size: 4rem;
+		}
+
+		@include media(s) {
+			font-size: 3.6rem;
+			letter-spacing: 0.5rem;
+		}
+
+		@include media(xs) {
+			font-size: 4rem;
+		}
 	}
 
 	&__secondary {
@@ -51,5 +84,18 @@
 
 		animation: leftToRight 1.5s ease-in-out .5s backwards;
 		backface-visibility: hidden;
+
+		@include media(m) {
+			font-size: 3rem;
+		}
+
+		@include media(s) {
+			font-size: 2.8rem;
+			letter-spacing: .2rem;
+		}
+
+		@include media(xs) {
+			font-size: 3rem;
+		}
 	}
 }

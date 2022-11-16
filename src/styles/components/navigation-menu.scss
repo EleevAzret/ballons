@@ -6,8 +6,8 @@
 	
 	&__button {
 		background-color: $white;
-		height: 5rem;
-		width: 5rem;
+		height: 50px;
+		width: 50px;
 		border-radius: 50%;
 		position: fixed;
 		top: 10rem;
@@ -16,11 +16,23 @@
 		text-align: center;
 		cursor: pointer;
 		box-shadow: 0 .4rem .4rem rgba($black, .25);
+
+		@include media(m) {
+			top: 7rem;
+			right: 7rem;
+		}
+
+		@include media(xs) {
+			width: 35px;
+			height: 35px;
+			top: 8rem;
+			right: 8rem;
+		}
 	}
 
 	&__background {
-		width: 5rem;
-		height: 5rem;
+		width: 50px;
+		height: 50px;
 		border-radius: 50%;
 		background: radial-gradient($brown-light, $brown-dark);
 		position: fixed;
@@ -29,6 +41,18 @@
 		z-index: 100;
 
 		transition: all .7s;
+
+		@include media(m) {
+			top: 7rem;
+			right: 7rem;
+		}
+
+		@include media(xs) {
+			width: 35px;
+			height: 35px;
+			top: 8rem;
+			right: 8rem;
+		}
 	}
 
 	&__menu {
@@ -88,6 +112,10 @@
 		position: relative;
 		margin-top: 25px;
 
+		@include media(xs) {
+			margin-top: 17px;
+		}
+
 		&, &::before, &::after {
 			width: 30px;
 			height: 2px;
@@ -95,6 +123,10 @@
 			display: inline-block;
 
 			transition: all .2s;
+
+			@include media(xs) {
+				width: 20px;
+			}
 		}
 
 		&::before, &::after {
@@ -104,11 +136,19 @@
 		}
 
 		&::before {
-			top: -7px;
+			top: -8px;
+
+			@include media(xs) {
+				top: -6px;
+			}
 		}
 
 		&::after {
-			top: 7px;
+			top: 8px;
+
+			@include media(xs) {
+				top: 6px;
+			}
 		}
 	}
 

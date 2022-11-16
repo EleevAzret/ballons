@@ -1,5 +1,9 @@
 .book {
 	padding: 10rem;
 	background: linear-gradient(90deg, $brown-light, $brown-dark);
+
+	@include media(xs) {
+		padding: 5rem;
+	}
 }
 

@@ -10,6 +10,10 @@
 
 	backface-visibility: hidden;
 	transition: all .4s;
+
+	@include media(m) {
+		font-size: 3rem;
+	}
 	
 	&:hover {
 		transform: skew(15deg, 5deg) scale(1.05);
@@ -27,6 +31,10 @@
 	font-size: $fs-h3;
 	line-height: 2.4rem;
 	letter-spacing: 0.2rem;
+
+	@include media(m) {
+		font-size: 1.8rem;
+	}
 }
 
 .paragraph {
@@ -34,4 +42,16 @@
 	font-size: $fs-par;
 	line-height: 1.9rem;
 	letter-spacing: 0.2rem;
+
+	@include media(m) {
+		font-size: 1.5rem;
+	}
+
+	@include media(s) {
+		font-size: 1.8rem;
+	}
+
+	@include media(xs) {
+		font-size: 2rem;
+	}
 }

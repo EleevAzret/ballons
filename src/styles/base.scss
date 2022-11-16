@@ -6,6 +6,20 @@
 
 html {
 	font-size: 62.5%;
+
+	@include media(m) {
+		font-size: 56.25%;
+	}
+	@include media(s) {
+		font-size: 50%;
+	}
+	@include media(xs) {
+		font-size: 30%;
+	}
+
+	@include media(l) {
+		font-size: 75%;
+	}
 }
 
 body {
@@ -16,6 +30,10 @@ body {
 	letter-spacing: .2rem;
 
 	padding: 5rem;
+
+	@include media(m) {
+		padding: 3rem;
+	}
 }
 
 .wrapper {

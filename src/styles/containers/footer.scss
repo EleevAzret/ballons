@@ -2,8 +2,19 @@
 	background-color: #333333;
 	padding: 8rem 0;
 
+	@include media(m) {
+		padding: 6rem 0;
+	}
+
+	@include media(s) {
+		padding: 3rem 0;
+	}
+
 	&__img > img {
 		width: 12rem;
+		@include media(s) {
+			width: 8rem;
+		}
 	}
 
 	&__nav {
@@ -16,6 +27,15 @@
 
 		&:not(:last-child) {
 			margin-right: 5rem;
+
+			@include media(m) {
+				margin-right: 3rem;
+			}
+			
+			@include media(s) {
+				margin: 0;
+				padding: 3.5rem;
+			}
 		}
 	}
 
@@ -29,6 +49,10 @@
 			display: inline-block;
 
 			transition: transform .2s;
+
+			@include media(s) {
+				letter-spacing: 0.1rem;
+			}
 		}
 		&:hover {
 			transform: scale(1.1) skewY(-5deg);

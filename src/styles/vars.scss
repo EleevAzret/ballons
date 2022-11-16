@@ -36,7 +36,7 @@ $fs-h3: 2rem;
 	}
 
 	@if $screen == m {
-		@media (max-width: 1200px) {
+		@media (max-width: 1240px) {
 			@content;
 		}
 	}
