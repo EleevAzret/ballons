@@ -26,6 +26,11 @@
 			padding: 2rem 3.5rem;
 			font-size: 2rem;
 		}
+
+		@include media(s) {
+			padding: 2rem 3.5rem;
+			font-size: 3rem;
+		}
 	}
 	
 	&:hover {
@@ -91,6 +96,10 @@
 		border-bottom: 1px solid $brown-light;
 
 		transition: all .1s;
+
+		@include media(xs) {
+			font-size: 4rem;
+		}
 	}
 
 	&:hover {

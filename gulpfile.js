@@ -4,6 +4,7 @@ const sass = require('gulp-sass')(require('sass'));
 const gcmq = require('gulp-group-css-media-queries');
 const autoprefixer = require('gulp-autoprefixer');
 const path = require('path');
+const browserSync = require('browser-sync').create();
 
 function clean() {
 	return del('./dist/*');
@@ -17,12 +18,14 @@ function html() {
 function styles() {
 	return gulp.src('./src/styles/main.scss')
 					.pipe(sass().on('error', sass.logError))
+					.pipe(autoprefixer())
 					.pipe(gcmq())
-					.pipe(gulp.dest('./dist/styles'));
+					.pipe(gulp.dest('./dist/styles'))
+					.pipe(browserSync.stream());
 }
 
 function defaultStyles() {
-	return gulp.src('./src/styles/default/**/*')
+	return gulp.src('./src/styles/defaults/**/*')
 					.pipe(gulp.dest('./dist/styles/default'));
 }
 
@@ -38,6 +41,12 @@ function img() {
 }
 
 function watch() {
+	browserSync.init({
+		server: {
+				baseDir: "./dist/"
+		}
+	});
+
 	gulp.watch('./src/**/*.html', html);
 	gulp.watch('./src/scripts/**/*.js', js);
 	gulp.watch('./src/styles/**/*.scss', styles);

@@ -13,6 +13,10 @@
 			z-index: 10;
 			transform: scale(1.1);
 			outline: 1rem solid $brown-light;
+
+			@include media(s) {
+				outline: none;
+			}
 		}
 
 		&_n1 {

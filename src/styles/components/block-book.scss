@@ -28,6 +28,10 @@
 		text-align: left;
 	}
 
+	@include media(s) {
+		padding: 3rem;
+	}
+
 	&__group {
 		&:not(:last-child) {
 			margin-bottom: 2.5rem;
@@ -38,6 +42,10 @@
 
 			@include media(s) {
 				margin-bottom: 2rem;
+			}
+
+			@include media(xs) {
+				margin-bottom: 3.5rem;
 			}
 		}
 
@@ -50,6 +58,10 @@
 
 			@include media(s) {
 				margin-bottom: 5rem;
+			}
+
+			@include media(xs) {
+				margin-bottom: 5.5rem;
 			}
 		}
 	}
@@ -72,6 +84,12 @@
 			box-shadow: 0 .4rem .4rem rgba($black, .25);
 		}
 
+		@include media(xs) {
+			font-size: 2.5rem;
+			letter-spacing: .1rem;
+			width: 100%;
+		}
+
 		&:focus {
 			outline: none;
 			border-color: #66D763;
@@ -91,6 +109,10 @@
 		margin-left: 2.5rem;
 
 		transition: all .3s ease-out;
+
+		@include media(xs) {
+			font-size: 3rem;
+		}
 	}
 
 	&__input:placeholder-shown + &__label {
@@ -113,6 +135,12 @@
 				margin-bottom: 2rem;
 			}
 		}
+
+		@include media(xs) {
+			&:not(:last-child) {
+				margin-bottom: 3rem;
+			}
+		}
 	}
 
 	&__label-radio {
@@ -123,6 +151,10 @@
 		font-size: $fs-par;
 		font-weight: 400;
 		letter-spacing: 0.2rem;
+
+		@include media(xs) {
+			font-size: 3rem;
+		}
 	}
 
 	&__radio-button {

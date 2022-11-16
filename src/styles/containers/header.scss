@@ -23,8 +23,8 @@
 		@include media(xs) {
 			width: 8rem;
 			height: 8rem;
-			top: 5rem;
-			left: 5rem;
+			top: 3rem;
+			left: 4rem;
 		}
 	}
 
@@ -39,6 +39,10 @@
 
 		@include media(m) {
 			top: 60%;
+		}
+
+		@include media(xs) {
+			top: 50%;
 		}
 	}
 }
@@ -74,7 +78,7 @@
 		}
 
 		@include media(xs) {
-			font-size: 4rem;
+			font-size: 6rem;
 		}
 	}
 
@@ -99,7 +103,7 @@
 		}
 
 		@include media(xs) {
-			font-size: 3rem;
+			font-size: 3.2rem;
 		}
 	}
 }

@@ -23,10 +23,10 @@
 		}
 
 		@include media(xs) {
-			width: 35px;
-			height: 35px;
-			top: 8rem;
-			right: 8rem;
+			width: 40px;
+			height: 40px;
+			top: 6rem;
+			right: 6rem;
 		}
 	}
 
@@ -48,10 +48,10 @@
 		}
 
 		@include media(xs) {
-			width: 35px;
-			height: 35px;
-			top: 8rem;
-			right: 8rem;
+			width: 40px;
+			height: 40px;
+			top: 6rem;
+			right: 6rem;
 		}
 	}
 
@@ -113,7 +113,7 @@
 		margin-top: 25px;
 
 		@include media(xs) {
-			margin-top: 17px;
+			margin-top: 18px;
 		}
 
 		&, &::before, &::after {

@@ -34,7 +34,7 @@
 			
 			@include media(s) {
 				margin: 0;
-				padding: 3.5rem;
+				padding: 2rem;
 			}
 		}
 	}
@@ -52,6 +52,10 @@
 
 			@include media(s) {
 				letter-spacing: 0.1rem;
+			}
+
+			@include media(xs) {
+				font-size: 3rem;
 			}
 		}
 		&:hover {
