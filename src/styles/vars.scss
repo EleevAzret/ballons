@@ -21,3 +21,29 @@ $fs-h3: 2rem;
 		clear: both;
 	}
 }
+
+@mixin media($screen) {
+	@if $screen == xs {
+		@media (max-width: 600px) {
+			@content;
+		}
+	}
+
+	@if $screen == s {
+		@media (max-width: 900px) {
+			@content;
+		}
+	}
+
+	@if $screen == m {
+		@media (max-width: 1200px) {
+			@content;
+		}
+	}
+
+	@if $screen == l {
+		@media (min-width: 1800px) {
+			@content;
+		}
+	}
+}
